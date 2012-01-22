@@ -6,10 +6,12 @@
 //  Copyright (c) 2011 Extessy AG. All rights reserved.
 //
 
+#import "VUDropboxHandler.h"
 #import "VUMasterViewController.h"
 
 @implementation VUMasterViewController
 
+@synthesize dropboxHandler;
 
 - (void)awakeFromNib
 {
@@ -27,6 +29,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.dropboxHandler = [[VUDropboxHandler alloc] init];
+    [self.dropboxHandler link];
+    
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

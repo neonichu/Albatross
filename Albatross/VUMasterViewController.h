@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class VUDropboxHandler;
+
 @interface VUMasterViewController : UITableViewController
+
+@property (nonatomic, strong) VUDropboxHandler* dropboxHandler;
 
 @end
